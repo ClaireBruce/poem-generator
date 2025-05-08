@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <title>Poem Generator</title>
@@ -13,15 +15,11 @@
     </header>
 
 <main>
-<form>
+<form id="poem-generator-form">
 <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off" class="instruction"/>
 <input type="submit" class="submit-button"/>
 </form>
-<div class="poem">
-    She walks in beauty, like the night 
-
-    <br />
-    Of cloudless climes and starry skies;
+<div class="poem" id="poem">
 </div>
 </main>
 
